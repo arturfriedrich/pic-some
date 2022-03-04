@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from "react"
 
-const { Provider } = createContext()
+const Context = createContext()
 
 function ContextProvider({children}) {
 
@@ -15,10 +15,10 @@ function ContextProvider({children}) {
     console.log(allPhotos)
 
     return (
-        <Provider value={{allPhotos}}>
+        <Context.Provider value={{allPhotos}}>
             {children}
-        </Provider>
+        </Context.Provider>
     )
 }
 
-export { ContextProvider, Provider }
+export { ContextProvider, Context }
