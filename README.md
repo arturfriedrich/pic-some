@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# PicSome online shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Order some picture and we'll deliver the printed versions for you.*
 
-## Available Scripts
+Learning **ReactRouter**.
 
-In the project directory, you can run:
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The Goal
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+User should be able to:
 
-### `npm test`
+-   [x] Select your favorite photos
+-   [x] Add pictures to the cart
+-   [x] Place an order
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Website to the current version
 
-### `npm run build`
+[Website](arturfriedrich.github.io/picsome/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screen Shot 2022-03-08 at 9 01 42](https://user-images.githubusercontent.com/67378210/157192966-98d2495d-2207-419b-b761-629bf411ef7e.png)
+![Screen Shot 2022-03-08 at 9 02 02](https://user-images.githubusercontent.com/67378210/157192996-95a4c8d1-d7eb-44f5-b724-ccebd7836406.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   React
+-   HTML markup
+-   CSS
+-   Javascript
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   How to setup a multi-page application with React Router
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```jsx
+<Switch>
+    <Route exact path="/">
+        <Photos />
+    </Route>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    <Route path="/cart">
+        <Cart />
+    </Route>
+</Switch>
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+Clone this repository and install the dependencies...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm install react-confetti
+```
 
-### Making a Progressive Web App
+To run locally then start [Rollup](https://rollupjs.org)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run dev
+```
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-   GitHub - [@arturfriedrich](https://www.github.com/arturfriedrich)
+-   Twitter - [@arturfriedrich7](https://twitter.com/arturfriedrich7)
 
-### Deployment
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-   [Scrimba](https://scrimba.com) - The base app is from a tutorial
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
