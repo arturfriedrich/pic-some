@@ -24,9 +24,13 @@ export default function Cart() {
             <h1>Check out</h1>
             {cartItemElements}
             <p className="total-cost">Total: {(cartItems.length * 5.99).toLocaleString("en-US", {style: "currency", currency: "USD"})}</p>
-            <div className="order-button">
-                <button onClick={placeOrder}>{buttonText}</button>
-            </div>
+            {
+                cartItems.length ?
+                <div className="order-button">
+                    <button onClick={placeOrder}>{buttonText}</button>
+                </div> :
+                <p>You have no items in your cart.</p>
+            }
         </main>
     )
 }
